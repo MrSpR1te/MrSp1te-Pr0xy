@@ -1,0 +1,54 @@
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+                <link rel="stylesheet" href="index.css">
+                <style>
+                    body {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100vh;
+                        margin: 0;
+                    }
+
+                    #content {
+                        text-align: center;
+                    }
+
+                    h1 {
+                        margin-bottom: 20px; /* Adjust the margin as needed */
+                    }
+
+                    #uv-form {
+                        display: inline-block;
+                        margin-top: 20px; /* Adjust the margin as needed */
+                    }
+                </style>
+            </head>
+
+            <body>
+                <div id="content">
+                    <h1>MrSpR1te Proxy</h1>
+
+                    <form id="uv-form">
+                        <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
+                        <input id="uv-address" type="text" placeholder="Search Google" class="form__input" />
+                    </form>
+
+                    <div class="desc left-margin">
+                        <p id="uv-error"></p>
+                        <pre id="uv-error-code"></pre>
+                    </div>
+
+                    <script src="uv/uv.bundle.js" defer></script>
+                    <script src="uv/uv.config.js" defer></script>
+                    <script src="register-sw.js" defer></script>
+                    <script src="search.js" defer></script>
+                    <script src="index.js" defer></script>
+                    <script src="error.js" defer></script>
+                </div>
+            </body>
+
+            </html>
